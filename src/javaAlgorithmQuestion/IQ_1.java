@@ -7,31 +7,32 @@ import java.util.Map;
 
 public class IQ_1 {
 
+     /* Interview Question
+        Tasks array : [3, 4, 3, 2, 5]
+        CPU Cycle : 10
+
+        According to the Shortest Task First rule, Task 3 (task given at index 3 of the array) has the lowest cycle time of 2, so it will be executed first.
+        Then, Tasks 0 and 2 have the next lowest cycle of 3. Task 0 will be executed first due to the lower index rule. And Task 2 will follow next.
+        Accordingly at CPU cylcle 8 (2+3+3), Task 3, Task 0 and Task 2 will be completed. (see the image below)
+        Next task will be Task1 with CPU cycle time 4. That means Task 1 will be running from cycle 9 until cycle 12. So we see that Task 1 is executing at cycle 10. Accordingly our function should return 1 as the response. (see below)
+        image.png
+
+        tasks:[3,10,20,1,2]	 cycle:15	    Return Value:1
+        tasks:[3,10,10,20,1,2]	cycle: 30	return Value:3   Please use Java Programming language
+        */
+
     public static void main(String[] args) {
 
         Integer[] tasks = {3,10,20,1,2};
         Integer[] tasks2 = {3,10,10,20,1,2};
         Integer[] tasks3 = {3, 4, 3, 2, 5};
 
-        //       System.out.println(getTaskIndexAtCycle(tasks3,10));
-//        System.out.println(getTaskIndexAtCycle(tasks2,0));
+        System.out.println(getTaskIndexAtCycle(tasks3,10));
+        System.out.println(getTaskIndexAtCycle(tasks2,0));
         System.out.println(getIndex(tasks, 15));
         System.out.println(getIndex(tasks2, 30));
         System.out.println(getIndex(tasks3, 10));
     }
-
-    //Interview Question
-    //Tasks array : [3, 4, 3, 2, 5]
-    //CPU Cycle : 10
-    //
-    //According to the Shortest Task First rule, Task 3 (task given at index 3 of the array) has the lowest cycle time of 2, so it will be executed first.
-    //Then, Tasks 0 and 2 have the next lowest cycle of 3. Task 0 will be executed first due to the lower index rule. And Task 2 will follow next.
-    //Accordingly at CPU cylcle 8 (2+3+3), Task 3, Task 0 and Task 2 will be completed. (see the image below)
-    //Next task will be Task1 with CPU cycle time 4. That means Task 1 will be running from cycle 9 until cycle 12. So we see that Task 1 is executing at cycle 10. Accordingly our function should return 1 as the response. (see below)
-    //image.png
-
-    //tasks:[3,10,20,1,2]	 cycle:15	    Return Value:1
-    //tasks:[3,10,10,20,1,2]	cycle: 30	return Value:3   Please use Java Programming language
 
     public static Integer getTaskIndexAtCycle(Integer[] tasks,Integer cycle){
         Integer index = 0;
