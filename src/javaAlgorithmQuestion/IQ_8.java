@@ -18,7 +18,41 @@ public class IQ_8 {
      */
 
     public static void main(String[] args) {
+        System.out.println(isValid1("(())"));
+        System.out.println(isValid1("(()())"));
+        System.out.println(isValid1("((()()))"));
+        System.out.println(isValid1("()()()"));
+        System.out.println(isValid1("()"));
+        System.out.println(isValid1("())()"));
+        System.out.println(isValid1(")()("));
+        System.out.println(isValid1("())()("));
 
+//        System.out.println(isValid2("(())"));
+//        System.out.println(isValid2("(()())"));
+//        System.out.println(isValid2("((()()))"));
+//        System.out.println(isValid2("()()()"));
+//        System.out.println(isValid2("()"));
+//        System.out.println(isValid2("())()"));
+//        System.out.println(isValid2(")()("));
+//        System.out.println(isValid2("())()("));
+//
+//        System.out.println(isValid3("(())"));
+//        System.out.println(isValid3("(()())"));
+//        System.out.println(isValid3("((()()))"));
+//        System.out.println(isValid3("()()()"));
+//        System.out.println(isValid3("()"));
+//        System.out.println(isValid3("())()"));
+//        System.out.println(isValid3(")()("));
+//        System.out.println(isValid3("())()("));
+//
+//        System.out.println(isValid4("(())"));
+//        System.out.println(isValid4("(()())"));
+//        System.out.println(isValid4("((()()))"));
+//        System.out.println(isValid4("()()()"));
+//        System.out.println(isValid4("()"));
+//        System.out.println(isValid4("())()"));
+//        System.out.println(isValid4(")()("));
+//        System.out.println(isValid4("())()("));
 
     }
 
@@ -29,7 +63,7 @@ public class IQ_8 {
         return str.isEmpty();
     }
 
-    public static boolean isvalid2(String str) {
+    public static boolean isValid2(String str) {
         String newStr = str.trim().replace(" ","");
         while (newStr.contains("()")) {
             newStr = newStr.replace("()", "");
@@ -42,7 +76,7 @@ public class IQ_8 {
         }else return false;
     }
 
-    public static boolean isvalid3(String str){
+    public static boolean isValid3(String str){
         str = str.replaceAll(" ","");
 
         for (int i = 0; i < str.length(); i++) {
@@ -54,10 +88,10 @@ public class IQ_8 {
         return true;
     }
 
-    public static boolean isvalid4(String str){
+    public static boolean isValid4(String str){
         int count =0;
         char[] chars = str.toCharArray();
-        for (char c : str.toCharArray()) { //chars yerine str.toCharArray(); yazdım. Genelde böyle istiyorlar.
+        for (char c : str.toCharArray()) { // I wrote str.toCharArray() instead of chars
             if (c=='('){
                 count++;
             }if (c==')'){
@@ -66,7 +100,7 @@ public class IQ_8 {
                 return false;
             }
         }
-        return count==0; //sıfırdan büyükse bu konditionı sağlamadığı için(count sıfıra eşit olmadığı için) false döndürür.
+        return count==0; //if the count is bigger than zero, it returns false as result beacuse of not providing the condition
     }
 
 }
