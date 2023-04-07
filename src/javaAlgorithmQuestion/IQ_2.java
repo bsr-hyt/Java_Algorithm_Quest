@@ -5,8 +5,8 @@ public class IQ_2 {
 
     /**Question 2
      * Write a method that takes 2 integers as strings and adds these two integers and returns a string.
-     *Example:str1= "234567543435";    str2="894784947849";
-     *Result:"11293524991284"
+     *      Example:str1= "234567543435";    str2="894784947849";
+     *      Result:"11293524991284"
      */
 
     public static void main(String[] args) {

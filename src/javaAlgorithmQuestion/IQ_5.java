@@ -5,31 +5,30 @@ import java.util.List;
 
 public class IQ_5 {
 
-    /**
-     * Question 5
+    /** Question 5
      * In this challenge, we want to iterate through on the characters of the input string and check whether the number of the
-     * occurrences for each character is equal. For example, "abcde" is a valid string, on the other hand,
-     * "abcdeee" is not because count of 'e' is 3, not 1 as the others.
-     * Moreover, we have chance to remove only one character from the string in order to make it valid.
-     * Think of a scenario: "xyzz" is given to us, and we should remove one of these 'z' characters.
-     * In this case, we can assume that the string is valid since each existing characters exist only single time after the removal operation.
+     *      occurrences for each character is equal. For example, "abcde" is a valid string, on the other hand,
+     *      "abcdeee" is not because count of 'e' is 3, not 1 as the others.
+     *      Moreover, we have chance to remove only one character from the string in order to make it valid.
+     *      Think of a scenario: "xyzz" is given to us, and we should remove one of these 'z' characters.
+     *      In this case, we can assume that the string is valid since each existing characters exist only single time after the removal operation.
      * Specification
-     * .isValid(str)--->Method Name
-     * Decide the given string is valid in terms of character counts including possibility of one character removal
+     *      .isValid(str)--->Method Name
+     *      Decide the given string is valid in terms of character counts including possibility of one character removal
      * Parameters
-     * str: String - input to be searched
+     *      str: String - input to be searched
      * Return Value
-     * boolean - final decision about that string, true or false
+     *      boolean - final decision about that string, true or false
      * Constraints
-     * Input string consists of English alphabet characters
-     * All characters are lowercase
+     *      Input string consists of English alphabet characters
+     *      All characters are lowercase
      * Examples:
-     * "cac" => true - we can get rid of one these 'c' chars
-     * "aabcc" => true - if we remove 'b', then it is ok
-     * "efgh" => true - we even don't need to use remove operation
-     * "mumukkpp" => true - all of them occurred twice
-     * "pppenm" => false - even tough we delete one 'p', that is not enough, still one more 'p' exists
-     * "ekekua" => false - we can either remove 'u' or 'a', but in any case, the remaining one breaks the rule
+     *      "cac" => true - we can get rid of one these 'c' chars
+     *      "aabcc" => true - if we remove 'b', then it is ok
+     *      "efgh" => true - we even don't need to use remove operation
+     *      "mumukkpp" => true - all of them occurred twice
+     *      "pppenm" => false - even tough we delete one 'p', that is not enough, still one more 'p' exists
+     *      "ekekua" => false - we can either remove 'u' or 'a', but in any case, the remaining one breaks the rule
      */
 
     public static void main(String[] args) {

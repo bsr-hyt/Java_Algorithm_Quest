@@ -4,9 +4,9 @@ public class IQ_8 {
 
     /** Question 8
      * Any "(" parentheses that are opened within the given string must be closed.
-     * Unopened parenthesis cannot be closed. And;
-     * Any opened parenthesis must be closed.
-     *      Example:
+     *      Unopened parenthesis cannot be closed. And;
+     *      Any opened parenthesis must be closed.
+     * Example:
      *         (())     --> valid
      *         (()())   --> valid
      *         ((()())) --> valid

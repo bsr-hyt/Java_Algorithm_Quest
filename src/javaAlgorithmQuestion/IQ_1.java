@@ -13,6 +13,7 @@ public class IQ_1 {
      *   According to the Shortest Task First rule,
      *   Task 3 (task given at index 3 of the array) has the lowest cycle time of 2, so it will be executed first.
      *   Then, Tasks 0 and 2 have the next lowest cycle of 3. Task 0 will be executed first due to the lower index rule.
+     *
      *   And Task 2 will follow next.
      *   Accordingly at CPU cylcle 8 (2+3+3), Task 3, Task 0 and Task 2 will be completed.
      *   Next task will be Task1 with CPU cycle time 4. That means Task 1 will be running from cycle 9 until cycle 12.
